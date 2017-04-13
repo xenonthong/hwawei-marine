@@ -1,0 +1,35 @@
+// Brand colors
+$white: #fff;
+$brand-color: #00a7ea;
+
+// Typography
+$font-size-base: 16px;
+$font-family-sans-serif: "Akkurat Pro" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-pri: $font-family-sans-serif;
+$font-pri-bold: "Akkurat Pro Bold" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Grids
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+// Buttons.
+$btn-default-color: $white;
+$btn-default-bg: #00a7ea;
+$btn-border-radius-base: 50px;
+$padding-base-vertical: 8px;
+$padding-base-horizontal: 28px;
+
+// Navbar
+$navbar-border-radius: 0;
+$navbar-default-bg: transparent;
+$navbar-default-color: $white;
+$navbar-default-link-color: $white;
+$grid-float-breakpoint: $screen-md;
+
+$navbar-default-toggle-icon-bar-bg: $white; // Hamburger bar color.
+$navbar-default-toggle-hover-bg: transparent;
+
+// Transition
+$transition-default: .3s ease-in-out;

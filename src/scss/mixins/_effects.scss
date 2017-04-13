@@ -1,0 +1,69 @@
+@mixin btm-border-transition($color, $height) {
+	transform: perspective(1px) translateZ(0);
+	position: relative;
+	overflow: hidden;
+
+	&:before,
+	&:after, {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 50%;
+		right: 50%;
+		bottom: 0;
+		background: $color;
+		height: $height;
+		transition: left $transition-default,
+					right $transition-default;
+	}
+
+	&:before {
+		left: 0;
+		right: 0;
+	}
+
+	&:after {
+		background: lighten($color, 10);
+	}
+
+	&:hover:after,
+	&:focus:after,
+	&:active:after {
+		left: 0;
+		right: 0;
+	}
+}
+
+@mixin btn-effect($bgColor, $textColor) {
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	position: relative;
+	transition: transform $transition-default;
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: $btn-border-radius-base;
+		background: darken($bgColor, 10);
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		transition: transform .2s ease-in;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $textColor;
+	}
+
+	&:hover:before,
+	&:focus:before,
+	&:active:before {
+		transform: scaleX(1);
+	}
+}

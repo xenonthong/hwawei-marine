@@ -1,0 +1,24 @@
+{
+  "name": "hwawei.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "hover.css": "^2.2.0",
+    "jquery": "^3.2.1",
+    "laravel-mix": "^0.10.0"
+  },
+  "devDependencies": {
+    "purifycss-webpack": "^0.6.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --watch-poll --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "",
+  "license": "ISC"
+}
