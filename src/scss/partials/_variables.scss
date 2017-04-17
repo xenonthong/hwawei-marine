@@ -1,12 +1,42 @@
-// Brand colors
+// Primary colors
 $white: #fff;
-$brand-color: #00a7ea;
+$dark-blue: #00517c;
+$blue: #00a7ea;
+$orange: #f39700;
+
+// Secondary colors
+$label-blue: #0083b7;
+$label-yellow: #fcc700;
+$error-red: #c30004;
+$table-blue: #f2fbfe;
+
+// 50 shades of grey. (Close enough)
+$bg-grey: #f7f7f7;
+$divider-grey: #dddddd;
+$placeholder-grey: #999999;
+$caption-grey: #666666;
+$nav-grey: #444444;
+$body-copy-grey: #333333;
+$footer-bg-grey: #222222;
 
 // Typography
 $font-size-base: 16px;
 $font-family-sans-serif: "Akkurat Pro" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-pri: $font-family-sans-serif;
 $font-pri-bold: "Akkurat Pro Bold" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-pri-light: "Akkurat Pro Light", "Akkurat Pro" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-fa: 'FontAwesome';
+$font-pri: $font-family-sans-serif;
+$headings-font-family: $font-pri-bold;
+$font-family-base: $font-pri;
+
+// Headings
+$headings-color: $dark-blue;
+
+// Blockquote
+$blockquote-font-size: 28px;
+
+// Hr
+$hr-border: $divider-grey;
 
 // Grids
 $screen-xs: 480px;
@@ -14,7 +44,7 @@ $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
 
-// Buttons.
+// Buttons
 $btn-default-color: $white;
 $btn-default-bg: #00a7ea;
 $btn-border-radius-base: 50px;
@@ -30,6 +60,16 @@ $grid-float-breakpoint: $screen-md;
 
 $navbar-default-toggle-icon-bar-bg: $white; // Hamburger bar color.
 $navbar-default-toggle-hover-bg: transparent;
+
+// Forms
+$input-border-radius: 1px;
+$input-border: $blue;
+$input-color: $footer-bg-grey;
+
+// Tables
+$table-border-color: $divider-grey;
+$table-cell-padding: 15px;
+$table-bg-accent: $table-blue;
 
 // Transition
 $transition-default: .3s ease-in-out;
