@@ -1,9 +1,12 @@
-.relative {
-	position: relative;
-}
-
 li {
 	margin-bottom: 25px;
+}
+
+.page-info {
+	h1 {
+		color: $white;
+		margin-top: 0;
+	}
 }
 
 .image-showcase {

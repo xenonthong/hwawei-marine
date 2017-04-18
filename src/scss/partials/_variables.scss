@@ -1,6 +1,13 @@
-// Media query breakpoints
+/*-----------------------------------------------------------------------
+ | MEDIA QUERIES
+ -----------------------------------------------------------------------*/
+// breakpoints
 $md-bp: "only screen and (min-width: $screen-sm)";
 
+
+/*-----------------------------------------------------------------------
+ | COLORS
+ -----------------------------------------------------------------------*/
 // Primary colors
 $white: #fff;
 $dark-blue: #00517c;
@@ -29,7 +36,10 @@ $state-danger-border: $error-red;
 $state-danger-text: $error-red;
 
 
-// Typography
+/*-----------------------------------------------------------------------
+ | TYPOGRAPHIES
+ -----------------------------------------------------------------------*/
+// Base fonts
 $font-size-base: 16px;
 $font-family-sans-serif: "Akkurat Pro" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-pri-bold: "Akkurat Pro Bold" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -39,7 +49,7 @@ $font-pri: $font-family-sans-serif;
 $headings-font-family: $font-pri-bold;
 $font-family-base: $font-pri;
 
-// Headings
+// Base header color
 $headings-color: $dark-blue;
 
 // Blockquote
@@ -49,19 +59,51 @@ $blockquote-font-size: 28px;
 // Hr
 $hr-border: $divider-grey;
 
-// Grids
+
+/*-----------------------------------------------------------------------
+ | GRIDS
+ -----------------------------------------------------------------------*/
 $screen-xs: 480px;
 $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
 
-// Buttons
+
+/*-----------------------------------------------------------------------
+ | BUTTONS
+ -----------------------------------------------------------------------*/
+ // Louis buitton.
+ /*
+  	░░░░░░░░▄▄▄███░░░░░░░░░░░░░░░░░░░░
+	░░░▄▄██████████░░░░░░░░░░░░░░░░░░░
+	░███████████████░░░░░░░░░░░░░░░░░░
+	░▀███████████████░░░░░▄▄▄░░░░░░░░░
+	░░░███████████████▄███▀▀▀░░░░░░░░░
+	░░░░███████████████▄▄░░░░░░░░░░░░░
+	░░░░▄████████▀▀▄▄▄▄▄░▀░░░░░░░░░░░░
+	▄███████▀█▄▀█▄░░█░▀▀▀░█░░▄▄░░░░░░░
+	▀▀░░░██▄█▄░░▀█░░▄███████▄█▀░░░▄░░░
+	░░░░░█░█▀▄▄▀▄▀░█▀▀▀█▀▄▄▀░░░░░░▄░▄█
+	░░░░░█░█░░▀▀▄▄█▀░█▀▀░░█░░░░░░░▀██░
+	░░░░░▀█▄░░░░░░░░░░░░░▄▀░░░░░░▄██░░
+	░░░░░░▀█▄▄░░░░░░░░▄▄█░░░░░░▄▀░░█░░
+	░░░░░░░░░▀███▀▀████▄██▄▄░░▄▀░░░░░░
+	░░░░░░░░░░░█▄▀██▀██▀▄█▄░▀▀░░░░░░░░
+	░░░░░░░░░░░██░▀█▄█░█▀░▀▄░░░░░░░░░░
+	░░░░░░░░░░█░█▄░░▀█▄▄▄░░█░░░░░░░░░░
+	░░░░░░░░░░█▀██▀▀▀▀░█▄░░░░░░░░░░░░░
+	░░░░░░░░░░░░▀░░░░░░░░░░░▀░░░░░░░░░
+ */
 $btn-default-color: $white;
 $btn-default-bg: #00a7ea;
 $btn-border-radius-base: 50px;
 $padding-base-vertical: 8px;
 $padding-base-horizontal: 28px;
 
+
+/*-----------------------------------------------------------------------
+ | Navigations
+ -----------------------------------------------------------------------*/
 // Navbar
 $navbar-border-radius: 0;
 $navbar-default-bg: transparent;
@@ -72,15 +114,32 @@ $grid-float-breakpoint: $screen-md;
 $navbar-default-toggle-icon-bar-bg: $white; // Hamburger bar color.
 $navbar-default-toggle-hover-bg: transparent;
 
-// Forms
+// Breadcrumbs
+$breadcrumb-bg: transparent;
+$breadcrumb-color: $white;
+$breadcrumb-active-color: $white;
+$breadcrumb-padding-horizontal: 0;
+$breadcrumb-padding-verticl: 0;
+$breadcrumb-separator: ">";
+$breadcrumb-font-size: 14px;
+
+
+/*-----------------------------------------------------------------------
+ | Forms
+ -----------------------------------------------------------------------*/
 $input-border-radius: 1px;
 $input-border: $blue;
 $input-color: $footer-bg-grey;
 
-// Tables
+
+/*-----------------------------------------------------------------------
+ | Tables
+ -----------------------------------------------------------------------*/
 $table-border-color: $divider-grey;
 $table-cell-padding: 15px;
 $table-bg-accent: $table-blue;
 
-// Transition
+/*-----------------------------------------------------------------------
+ | OTHER 'MEH' STUFF
+ -----------------------------------------------------------------------*/
 $transition-default: .3s ease-in-out;
