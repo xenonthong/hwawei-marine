@@ -1,3 +1,6 @@
+// Media query breakpoints
+$md-bp: "only screen and (min-width: $screen-sm)";
+
 // Primary colors
 $white: #fff;
 $dark-blue: #00517c;
@@ -19,6 +22,12 @@ $nav-grey: #444444;
 $body-copy-grey: #333333;
 $footer-bg-grey: #222222;
 
+// Bootstrap colors
+$brand-danger: $error-red;
+$state-danger-border: $error-red;
+$state-danger-text: $error-red;
+
+
 // Typography
 $font-size-base: 16px;
 $font-family-sans-serif: "Akkurat Pro" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -33,6 +42,7 @@ $font-family-base: $font-pri;
 $headings-color: $dark-blue;
 
 // Blockquote
+$blockquote-font-size-sm: 22px;
 $blockquote-font-size: 28px;
 
 // Hr

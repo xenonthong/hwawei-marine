@@ -23,8 +23,8 @@
 
 .container-subpage {
 	@include container-fixed;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 
 	@media (min-width: $screen-sm-min) {
 		width: $container-sm;
@@ -34,6 +34,8 @@
 	}
 	@media (min-width: $screen-lg-min) {
 		width: 750px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 }
 

@@ -1,4 +1,6 @@
- @font-face {
+@import url('https://fonts.googleapis.com/css?family=Eczar');
+
+@font-face {
 		font-family: "Akkurat Pro";
 		src: url("../fonts/AkkuratPro-Regular.eot"); /* IE9 */
 		src: url("../onts/AkkuratPro-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
@@ -45,4 +47,5 @@
 @import "bootstrap-custom";
 @import "general";
 @import "../components/cards";
+@import "../components/footer";
 @import "../libraries/jquery-nice-select/nice-select";

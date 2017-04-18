@@ -18,16 +18,69 @@ h2, h3, h4, h5, h6,
 	color: $headings-color;
 }
 
-h1, .h1 { font-size: 36px; }
-h2, .h2 { font-size: 30px; }
-h3, .h3 { font-size: 26px; }
-h4, .h4 { font-size: 22px; }
-h5, .h5 { font-size: 20px; }
-h6, .h6 { font-size: 18px; }
+
+h1,
+.h1 {
+	font-size: 24px;
+
+	@media #{$md-bp} {
+		font-size: 36px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: 24px;
+
+	@media #{$md-bp} {
+		font-size: 30px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 23px;
+
+	@media #{$md-bp} { 
+		font-size: 26px;
+	}
+}
+
+h4,
+.h4 {
+	font-size: 22px;
+
+	@media #{$md-bp} { 
+		font-size: 22px;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 20px;
+
+	@media #{$md-bp} { 
+		font-size: 20px;
+	}
+}
+
+h6,
+.h6 {
+	font-size: 18px;
+
+	@media #{$md-bp} { 
+		font-size: 18px;
+	}
+}
 
 h1, h2, h3, h4, h5, h6 {
-	margin-top: 0;
-	margin-bottom: 25px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+
+	@media #{$md-bp} {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
 }
 
 
@@ -206,17 +259,34 @@ abbr[data-original-title] {
 
 // Blockquotes
 blockquote {
-	@extend .col-md-10;
-	@extend .col-md-offset-1;
-	padding-top: 40px;
-	padding-right: 30px;
-	padding-bottom: 40px;
-	padding-left: 95px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	position: relative;
+	padding: 65px 20px 20px;
+	margin: 0;
 	box-shadow: 0px 0px 30px 5px rgba(243,247,249,1);
 	font-family: $font-pri-light;
-	font-size: $blockquote-font-size;
+	font-size: $blockquote-font-size-sm;
+
+	&:before {
+		content: '\201C';
+		position: absolute;
+		top: -25px;
+    	left: 20px; // same as padding.
+    	font: 120px 'Eczar', serif;
+		color: $orange;
+
+		@media #{$md-bp} {
+			top: -10px;
+		}
+	}
+
+	@media #{$md-bp} {
+		@include make-md-column(10);
+		@include make-md-column-offset(1);
+		padding: 35px 35px 35px 95px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: $blockquote-font-size;
+	}
 
 	p,
 	ul,
@@ -282,15 +352,21 @@ a {
 
 // Captions
 .caption {
-		font: $font-pri 14px;
+		font: 14px $font-pri;
 }
 
 figcaption {
 	padding: 15px 0;
+	font: 14px $font-pri;
+	color: $caption-grey
 }
 
 // Lines
 .container-subpage + hr {
-	width: 75%;
+	width: calc(100% - #{$grid-gutter-width});
 	margin: 0 auto;
+
+	@media #{$md-bp} {
+		width: 75%;
+	}
 }

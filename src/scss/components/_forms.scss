@@ -3,6 +3,15 @@
 // --------------------------------------------------
 
 
+
+// Error message.
+.field-msg {
+	display: none;
+	font-style: italic;
+	font-size: 14px;
+	margin: 3px 0 0;
+}
+
 // Normalize non-controls
 //
 // Restyle and baseline non-control form elements.
@@ -433,12 +442,27 @@ input[type="checkbox"] {
 // Feedback states
 .has-success {
 	@include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+
+	.field-msg {
+		display: block;
+		color: $state-success-text;
+	}
 }
 .has-warning {
 	@include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+
+	.field-msg {
+		display: block;
+		color: $state-warning-text;
+	}
 }
 .has-error {
 	@include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+
+	.field-msg {
+		display: block;
+		color: $state-danger-text;
+	}
 }
 
 // Reposition feedback icon if input has visible label above
