@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
+    "debounce": "^1.0.0",
     "font-awesome": "^4.7.0",
     "hover.css": "^2.2.0",
     "jquery": "^3.2.1",

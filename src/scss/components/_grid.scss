@@ -30,7 +30,9 @@
 		width: $container-sm;
 	}
 	@media (min-width: $screen-md-min) {
-		width: $container-md;
+		width: 750px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	@media (min-width: $screen-lg-min) {
 		width: 750px;

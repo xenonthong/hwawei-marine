@@ -3605,7 +3605,9 @@ pre code {
 
 @media (min-width: 992px) {
   .container-subpage {
-    width: 970px;
+    width: 750px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -6749,6 +6751,42 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
 
+.btn-btt {
+  position: fixed;
+  background: #00a7ea;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  opacity: .9;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-btt {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+.btn-btt i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-btt:hover i {
+  top: 5px;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -8782,6 +8820,10 @@ button.close {
   }
 }
 
+.relative {
+  position: relative;
+}
+
 li {
   margin-bottom: 25px;
 }
@@ -8922,6 +8964,113 @@ li {
 .card--career-exp:hover:after, .card--career-exp:focus:after, .card--career-exp:active:after, .card--career-exp.nice-select.open:after {
   left: 0;
   right: 0;
+}
+
+footer {
+  padding: 30px 0 25px;
+  background: #222222;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+footer nav {
+  margin: 35px 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  footer nav {
+    margin: 10px 0 20px;
+  }
+}
+
+footer nav ul {
+  margin-bottom: 0;
+}
+
+footer nav li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer nav li:last-child {
+  margin-bottom: 0;
+}
+
+footer nav a {
+  color: #aaaaaa;
+  text-transform: capitalize;
+}
+
+footer small {
+  font-size: 14px;
+}
+
+.social {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 20px 0 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .social {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right !important;
+    margin: 20px 0 0;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .social {
+    float: left;
+    width: 50%;
+  }
+}
+
+.social a {
+  margin-right: 15px;
+}
+
+.social a:last-child {
+  margin-right: 6px;
+}
+
+.social-icon {
+  width: 26px;
+}
+
+.copyright {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .copyright {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right !important;
+    margin: 20px 0 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .copyright {
+    float: left;
+    width: 50%;
+  }
 }
 
 .nice-select {
