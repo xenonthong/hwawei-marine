@@ -6,10 +6,15 @@
 .breadcrumb {
 	padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
 	margin-bottom: 0;
+	display: none;
 	list-style: none;
 	background-color: $breadcrumb-bg;
 	border-radius: $border-radius-base;
 	text-transform: capitalize;
+
+	@media #{$md-bp} {
+		display: block;
+	}
 
 	> li {
 	display: inline-block;

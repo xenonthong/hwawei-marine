@@ -133,6 +133,27 @@ a.btn {
 	@include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
+.btn-play {
+	@extend .fa;
+	@extend .fa-play;
+
+	padding: 17px 13px 13px 17px;
+	height: 70px;
+	width: 70px;
+	border: solid 3px $white;
+	border-radius: 50%;
+	color: $white;
+	font-size: 30px;
+	text-decoration: none;
+	background: transparent;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $white;
+		text-decoration: none;
+	}
+}
 
 // Link buttons
 // -------------------------

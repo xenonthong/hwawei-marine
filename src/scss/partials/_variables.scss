@@ -97,7 +97,7 @@ $screen-lg: 1200px;
 $btn-default-color: $white;
 $btn-default-bg: #00a7ea;
 $btn-border-radius-base: 50px;
-$padding-base-vertical: 8px;
+$padding-base-vertical: 12px;
 $padding-base-horizontal: 28px;
 
 
@@ -105,14 +105,24 @@ $padding-base-horizontal: 28px;
  | Navigations
  -----------------------------------------------------------------------*/
 // Navbar
+$navbar-height: 50px;
 $navbar-border-radius: 0;
+$navbar-padding-vertical: 0;
+$navbar-margin-bottom: 0;
 $navbar-default-bg: transparent;
+$navbar-inverse-bg: $white;
 $navbar-default-color: $white;
+$navbar-default-mobile-color: $nav-grey;
+$navbar-inverse-color: $nav-grey;
 $navbar-default-link-color: $white;
+$navbar-inverse-link-color: $nav-grey;
+$navbar-default-link-hover-color: $dark-blue;
+$navbar-inverse-link-hover-color: $dark-blue;
 $grid-float-breakpoint: $screen-md;
-
 $navbar-default-toggle-icon-bar-bg: $white; // Hamburger bar color.
+$navbar-inverse-toggle-icon-bar-bg: $nav-grey;
 $navbar-default-toggle-hover-bg: transparent;
+$navbar-inverse-toggle-hover-bg: transparent;
 
 // Breadcrumbs
 $breadcrumb-bg: transparent;

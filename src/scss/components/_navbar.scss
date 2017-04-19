@@ -12,7 +12,7 @@
 	position: relative;
 	min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
 	margin-bottom: $navbar-margin-bottom;
-	padding: 20px 0 10px 0;
+	padding: 10px 0 0 0;
 	border: 0;
 	font-size: 18px;
 
@@ -21,6 +21,7 @@
 
 	@media (min-width: $grid-float-breakpoint) {
 		border-radius: $navbar-border-radius;
+		padding: 15px 0 15px 0;
 	}
 }
 
@@ -143,6 +144,7 @@
 	right: 0;
 	left: 0;
 	z-index: $zindex-navbar-fixed;
+	transition: all $transition-default;
 
 	// Undo the rounded corners
 	@media (min-width: $grid-float-breakpoint) {
@@ -204,7 +206,7 @@
 	float: right;
 	margin-right: $navbar-padding-horizontal;
 	padding: 9px 10px;
-	@include navbar-vertical-align(34px);
+	@include navbar-vertical-align(31px);
 	background-color: transparent;
 	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
 	border: 0;
@@ -224,7 +226,7 @@
 		border-radius: 1px;
 	}
 	.icon-bar + .icon-bar {
-		margin-top: 4px;
+		margin-top: 2px;
 	}
 
 	@media (min-width: $grid-float-breakpoint) {
@@ -240,12 +242,17 @@
 
 .navbar-nav {
 	margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
-	padding-top: 20px;
+	padding-top: 17px;
+
+	li {
+		margin-bottom: 0;
+	}
 
 	> li > a {
-		padding-top:		10px;
+		padding-top: 10px;
 		padding-bottom: 10px;
 		line-height: $line-height-computed;
+		transition: all $transition-default;
 	}
 
 	@media (max-width: $grid-float-breakpoint-max) {
@@ -418,12 +425,26 @@
 	}
 
 	.navbar-text {
-		color: $navbar-default-color;
+		color: $navbar-default-mobile-color;
+		
+		@media #{$md-bp} {
+			color: $navbar-default-color;
+		}
 	}
 
 	.navbar-nav {
+		background: $white;
+
+		@media #{$md-bp} {
+			background: transparent;
+		}
+
 		> li > a {
-			color: $navbar-default-link-color;
+			color: $navbar-default-mobile-color;
+		
+			@media #{$md-bp} {
+				color: $navbar-default-color;
+			}
 
 			&:hover,
 			&:focus {
@@ -541,6 +562,7 @@
 .navbar-inverse {
 	background-color: $navbar-inverse-bg;
 	border-color: $navbar-inverse-border;
+	box-shadow: 0px 4px 10px -4px rgba(68,68,68,0.4);
 
 	.navbar-brand {
 		color: $navbar-inverse-brand-color;

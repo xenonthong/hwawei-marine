@@ -2,6 +2,47 @@ li {
 	margin-bottom: 25px;
 }
 
+video {
+	width: 100%;
+	height: auto;
+	object-fit: initial;
+}
+
+.content-home,
+.content-subpage {
+	position: relative;
+	z-index: 3;
+
+	&:before {
+		content: '';
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		width: 100%;
+
+		@media #{$md-bp} {
+			background-position: top center;
+		}
+	}
+}
+
+.content-home {
+	&:before {
+		height: 168px;
+		top: -95px;
+		background-image: url('../img/home_curve.png');
+	}
+}
+
+.content-subpage {
+	&:before {
+		height: 56px;
+		top: -56px;
+		background-image: url('../img/subpage_curve.png');
+	}
+}
+
 .page-info {
 	h1 {
 		color: $white;

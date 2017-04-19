@@ -5,7 +5,10 @@ window.debounce = require('debounce')
 require('bootstrap-sass/assets/javascripts/bootstrap/dropdown')
 require('bootstrap-sass/assets/javascripts/bootstrap/transition')
 require('bootstrap-sass/assets/javascripts/bootstrap/collapse')
+require('bootstrap-sass/assets/javascripts/bootstrap/modal')
 
 require('./backToTop')
+require('./stickyMenu')
+require('./heroVideo')
 
 $('select').niceSelect()
