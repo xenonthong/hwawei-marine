@@ -3912,6 +3912,13 @@ pre code {
   margin-left: 100%;
 }
 
+@media (max-width: 767px) {
+  [class^="col-xs-"] {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
@@ -8989,8 +8996,8 @@ video {
 }
 
 .content-home:before {
-  height: 168px;
-  top: -95px;
+  height: 79px;
+  top: -78px;
   background-image: url("../img/home_curve.png");
 }
 
@@ -9201,6 +9208,65 @@ video {
 .card--career-exp:hover:after, .card--career-exp:focus:after, .card--career-exp:active:after, .card--career-exp.nice-select.open:after {
   left: 0;
   right: 0;
+}
+
+/*-----------------------------------------------------------------------
+ | FEATURED NEWS
+ -----------------------------------------------------------------------*/
+.feat-news-wrapper {
+  overflow-x: auto;
+  margin-bottom: 25px;
+}
+
+.feat-news-swipe {
+  width: 800px;
+}
+
+/*-----------------------------------------------------------------------
+ | GENERAL NEWS
+ -----------------------------------------------------------------------*/
+.news {
+  position: relative;
+}
+
+.news__overlay {
+  position: relative;
+}
+
+.news__overlay:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, transparent 70%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 70%);
+}
+
+.news__img {
+  width: 100%;
+}
+
+.news__title {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 15px 15px 12px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.news__title only screen and {
+  font-size: 26px;
+}
+
+.news__category {
+  position: absolute;
+  top: 20px;
+  padding: 5px 15px;
+  font-size: 12px;
+  text-transform: capitalize;
 }
 
 footer {
