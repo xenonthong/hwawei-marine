@@ -4,6 +4,7 @@
 .feat-news-wrapper {
 	overflow-x: auto;
 	margin-bottom: 25px;
+	margin-top: -78px;
 }
 
 .feat-news-swipe {
@@ -50,10 +51,29 @@
 
 		#{&}__category {
 			position: absolute;
-			top: 20px;
+			bottom: 190px;
+			left: 0;
 			padding: 5px 15px;
 			font-size: 12px;
 			text-transform: capitalize;
+		}
+
+		#{&}__category--news {
+			background-color: $label-orange;
+		}
+
+		#{&}__category--event {
+			background-color: $label-blue;
+		}
+
+		#{&}__category--case {
+			background-color: $label-yellow;
+
+			color: $footer-bg-grey;
+		}
+
+		#{&}__category--webinar {
+			background-color: $label-blue-light;
 		}
 	}
 }

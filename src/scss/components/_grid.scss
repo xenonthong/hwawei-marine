@@ -57,6 +57,12 @@
 
 .row {
 	@include make-row;
+
+	// Override bootstraps' grid margin for mobile
+	@media (max-width: $screen-xs-max) {
+		margin-left: (-$xs-gutter-width / 2);
+		margin-right: (-$xs-gutter-width / 2);
+	}
 }
 
 

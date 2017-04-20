@@ -3697,6 +3697,13 @@ pre code {
   clear: both;
 }
 
+@media (max-width: 767px) {
+  .row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
@@ -4396,12 +4403,6 @@ pre code {
   }
 }
 
-h1,
-.h1 {
-  font-family: "Akkurat Pro Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #00517c;
-}
-
 h2, h3, h4, h5, h6,
 .h2, .h3, .h4, .h5, .h6 {
   font-family: "Akkurat Pro Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4411,6 +4412,8 @@ h2, h3, h4, h5, h6,
 
 h1,
 .h1 {
+  font-family: "Akkurat Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #00517c;
   font-size: 24px;
 }
 
@@ -4419,6 +4422,10 @@ h1,
   .h1 {
     font-size: 36px;
   }
+}
+
+.heading-alt-color {
+  color: #444444;
 }
 
 h2,
@@ -4484,6 +4491,7 @@ h6,
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 
 @media only screen and (min-width: 768px) {
@@ -9216,6 +9224,7 @@ video {
 .feat-news-wrapper {
   overflow-x: auto;
   margin-bottom: 25px;
+  margin-top: -78px;
 }
 
 .feat-news-swipe {
@@ -9263,10 +9272,28 @@ video {
 
 .news__category {
   position: absolute;
-  top: 20px;
+  bottom: 190px;
+  left: 0;
   padding: 5px 15px;
   font-size: 12px;
   text-transform: capitalize;
+}
+
+.news__category--news {
+  background-color: #f39700;
+}
+
+.news__category--event {
+  background-color: #0083b7;
+}
+
+.news__category--case {
+  background-color: #fcc700;
+  color: #222222;
+}
+
+.news__category--webinar {
+  background-color: #00a7ea;
 }
 
 footer {
@@ -9374,6 +9401,59 @@ footer small {
     float: left;
     width: 50%;
   }
+}
+
+.section-featured-news {
+  padding-bottom: 50px;
+}
+
+.section-about {
+  padding-bottom: 115px;
+  background: url("../img/about_pencil.png") no-repeat 80px bottom;
+}
+
+.section-about .solution {
+  padding: 8px;
+  margin-bottom: 25px;
+  width: 50%;
+  float: left;
+}
+
+.section-about .solution:nth-child(1), .section-about .solution:nth-child(2) {
+  border-bottom: solid 1px #dddddd;
+}
+
+.section-about .solution:nth-child(even) {
+  border-left: solid 1px #dddddd;
+}
+
+.section-about .solution__icon {
+  float: left;
+  margin: 8px 5px 0 0;
+}
+
+.section-about .solution__type {
+  font-family: "Akkurat Pro Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+.section-testimonials {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.watercolor-effect {
+  background-repeat: no-repeat;
+}
+
+.watercolor-effect--1 {
+  background-image: url("../img/watercolor_1.png"), url("../img/watercolor_2.png");
+  background-position: -100% 100%, 100% 300px;
+}
+
+.watercolor-effect--1 only screen and {
+  background-position: 0% 100%, 100% 100%;
 }
 
 .nice-select {
