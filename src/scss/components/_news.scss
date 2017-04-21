@@ -5,10 +5,18 @@
 	overflow-x: auto;
 	margin-bottom: 25px;
 	margin-top: -78px;
+
+	@media #{$md-bp} {
+		overflow-x: hidden;
+	}
 }
 
 .feat-news-swipe {
 	width: 800px; // Just a magic number
+
+	@media #{$md-bp} {
+		width: 100%;
+	}
 }
 
 /*-----------------------------------------------------------------------
@@ -17,7 +25,25 @@
 .news {
 	position: relative;
 
+	@media #{$md-bp} {
+		height: auto;
+	}
+
 	@at-root {
+		#{&}--tall {
+			@media #{$md-bp} {
+				max-height: 524px;
+			}
+		}
+
+		#{&}--short {
+
+			@media #{$md-bp} {
+				max-height: 247px;
+				margin-bottom: 30px;
+			}
+		}
+
 		#{&}__overlay {
 			position: relative;
 
@@ -44,7 +70,7 @@
 			font-size: 18px;
 			color: $white;
 
-			#{$md-bp} {
+			@media #{$md-bp} {
 				font-size: 26px;
 			}
 		}
@@ -56,6 +82,11 @@
 			padding: 5px 15px;
 			font-size: 12px;
 			text-transform: capitalize;
+
+			@media #{$md-bp} {
+				bottom: auto;
+				top: 20px;
+			}
 		}
 
 		#{&}__category--news {

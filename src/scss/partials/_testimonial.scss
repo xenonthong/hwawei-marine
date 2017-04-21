@@ -1,0 +1,82 @@
+.testimonial {
+	position: relative;
+	padding: 60px 35px 50px;
+	color: $white;
+
+	&:before,
+	&:after {
+		position: absolute;
+		font-family: 'Eczar', serif;
+		color: $orange;
+	}
+
+	&:before {
+		content: '\201C';
+		top: 10px;
+		left: 0;
+		font-size: 100px;
+
+		@media #{$md-bp} {
+			top: -20px;
+			font-size: 200px;
+		}
+	}
+
+	&:after {
+		content: '\201D';
+		bottom: -115px;
+		right: 0;
+		font-size: 150px;
+
+		@media #{$md-bp} {
+			bottom: -120px;
+		}
+	}
+
+	@media #{$md-bp} {
+		padding: 100px 0 80px;
+	}
+
+	@at-root {
+		#{&}__photo {
+			@media #{$md-bp} {
+				@include make-xs-column-offset(1);
+				@include make-xs-column(2);
+			}
+
+			img {
+				width: 80px;
+				border: solid 3px $white;
+				border-radius: 50%;
+
+				@media #{$md-bp} {
+					width: 170px;
+				}
+			}
+		}
+
+		#{&}__description,
+		#{&}__by {
+			@media #{$md-bp} {
+				@include make-xs-column(8);
+			}
+		}
+
+		#{&}__description {
+			padding-top: 25px;
+			font-size: 18px;
+			font-family: $font-pri;
+		}
+
+		#{&}__by {
+			font-family: $font-pri-bold;
+			padding-top: 25px;
+
+			span {
+				display: block;
+				font-family: $font-pri;
+				font-style: italic;
+			}
+		}
+	}
+}

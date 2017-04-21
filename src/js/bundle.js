@@ -15,5 +15,5 @@ require('./heroVideo')
 $('select').niceSelect()
 
 $('.carousel').carousel({
-	interval: 2000
+	interval: 5000
 })

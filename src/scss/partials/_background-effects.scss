@@ -6,9 +6,14 @@
 			background-image: url('../img/watercolor_1.png'), url('../img/watercolor_2.png');
 			background-position: -100% 100%, 100% 300px;
 			
-			#{$md-bp} {
-				background-position: 0% 100%, 100% 100%;
+			@media #{$md-bp} {
+				background-position: 0% 100%, 100% 260px;
 			}
+		}
+
+		#{&}--2 {
+			background-image: url('../img/watercolor_3.png');
+			background-position: left top;
 		}
 	}
 }

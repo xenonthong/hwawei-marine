@@ -4,7 +4,12 @@
 
 .section-about {
 	padding-bottom: 115px;
-	background: url("../img/about_pencil.png") no-repeat 80px bottom;
+	background-position: 80px bottom;
+	background-repeat: no-repeat;
+
+	@media #{$md-bp} {
+		background-position: right 10px;
+	}
 
 	.solution {
 		padding: 8px;
@@ -15,10 +20,27 @@
 		&:nth-child(1),
 		&:nth-child(2) {
 			border-bottom: solid 1px $divider-grey;
+
+			@media #{$md-bp} {
+				border-bottom: 0;
+			}
 		}
 
 		&:nth-child(even) {
 			border-left: solid 1px $divider-grey;
+
+			@media #{$md-bp} {
+				border-left: 0;
+			}
+		}
+
+		@media #{$md-bp} {
+			width: auto;
+			border-right: solid 1px $divider-grey;
+
+			&:last-child {
+				border-right: 0;
+			}
 		}
 	}
 
@@ -37,4 +59,80 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.section-partners {
+	padding: 60px 0 65px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+
+	.partners-logo {
+		text-align: center;
+		margin-top: 30px;
+
+		@media #{$md-bp} {
+			min-height: 150px;
+		}
+		
+
+		img {
+			filter: grayscale(100%);
+			opacity: .9;
+			transition: all $transition-default;
+
+			&:hover {
+				filter: none;
+				opacity: 1;
+			}
+		}
+
+		a {
+			display: inline-block;
+			margin-right: 5%;
+			margin-bottom: 20px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	#partners-carousel {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+.section-keypeople {
+	color: $white;
+
+	.section-title {
+		color: $white;
+	}
+}
+
+.keypeople__overlay {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(135deg, transparentize($dark-blue, 0.2), rgba(0, 0, 0, 0.3));
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.keypeople__content {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	right: 0;
+	padding-top: 50px;
 }
