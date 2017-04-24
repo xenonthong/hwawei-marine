@@ -272,12 +272,19 @@
 
 .panel-icon {
 	border: 0;
-	border-radius: 0;
+	border-top: 0;
+	border-right: 0;
 	border-bottom: solid 1px $blue;
+	border-left: 0;
 
 	& .panel-heading + .panel-collapse > .panel-body,
 	& .panel-heading + .panel-collapse > .list-group {
 		border-top: 0;
+	}
+
+	&.panel {
+		border-radius: 0;
+		box-shadow: none;
 	}
 
 	.panel-title {

@@ -19,7 +19,7 @@ h1,
 	color: $headings-color;
 	font-size: 24px;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		font-size: 36px;
 	}
 }
@@ -32,7 +32,7 @@ h2,
 .h2 {
 	font-size: 24px;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		font-size: 30px;
 	}
 }
@@ -41,7 +41,7 @@ h3,
 .h3 {
 	font-size: 23px;
 
-	@media #{$md-bp} { 
+	@media #{$sm-bp} { 
 		font-size: 26px;
 	}
 }
@@ -50,7 +50,7 @@ h4,
 .h4 {
 	font-size: 22px;
 
-	@media #{$md-bp} { 
+	@media #{$sm-bp} { 
 		font-size: 22px;
 	}
 }
@@ -59,7 +59,7 @@ h5,
 .h5 {
 	font-size: 20px;
 
-	@media #{$md-bp} { 
+	@media #{$sm-bp} { 
 		font-size: 20px;
 	}
 }
@@ -68,7 +68,7 @@ h6,
 .h6 {
 	font-size: 18px;
 
-	@media #{$md-bp} { 
+	@media #{$sm-bp} { 
 		font-size: 18px;
 	}
 }
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 20px;
 	font-weight: normal;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		margin-top: 25px;
 		margin-bottom: 25px;
 	}
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 24px;
 	color: $nav-grey;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		font-size: 26px;
 	}
 }
@@ -284,12 +284,12 @@ blockquote {
     	font: 120px 'Eczar', serif;
 		color: $orange;
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			top: -10px;
 		}
 	}
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		@include make-md-column(10);
 		@include make-md-column-offset(1);
 		padding: 35px 35px 35px 95px;
@@ -376,7 +376,7 @@ figcaption {
 	width: calc(100% - #{$grid-gutter-width});
 	margin: 0 auto;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		width: 75%;
 	}
 }

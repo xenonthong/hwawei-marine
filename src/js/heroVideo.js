@@ -5,7 +5,11 @@ var heroVideo = {
 	},
 
 	autoplay() {
-		heroVideo.data.video[0].play();
+		let video = heroVideo.data.video[0]
+
+		if (typeof video !== 'undefined') {
+			video.play();
+		}
 	},
 
 	checkWidth() {

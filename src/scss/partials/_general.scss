@@ -1,3 +1,7 @@
+body {
+	overflow-x: hidden;
+}
+
 li {
 	margin-bottom: 25px;
 }
@@ -26,7 +30,7 @@ video {
 		position: absolute;
 		width: 100%;
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			background-position: top center;
 		}
 	}
@@ -42,9 +46,9 @@ video {
 
 .content-subpage {
 	&:before {
-		height: 56px;
-		top: -56px;
-		background-image: url('../img/subpage_curve.png');
+		height: 80px;
+		top: -60px;
+		background-image: url('../img/subpage_curve.svg');
 	}
 }
 
@@ -64,7 +68,7 @@ video {
 		width: 100%;
 	}
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		@include make-md-column(10);
 		@include make-md-column-offset(1);
 		margin-top: 30px;

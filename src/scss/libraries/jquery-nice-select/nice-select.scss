@@ -3,7 +3,7 @@ $font_size: 14px !default;
 $font_size_small: 12px !default;
 
 $input_border_radius: 5px !default;
-$input_height: 42px !default;
+$input_height: 48px !default;
 $input_height_small: 36px !default;
 $dropdown_padding: 18px !default;
 
@@ -11,7 +11,7 @@ $gray_dark: #444 !default;
 $gray: #999 !default;
 $gray_light: #e8e8e8 !default;
 $gray_lighter: #f6f6f6 !default;
-$primary_light: $gray !default;
+$primary_light: $blue !default;
 $arrow_color: $gray !default;
 
 // Style the dropdown
@@ -41,12 +41,12 @@ $arrow_color: $gray !default;
 	width: auto;
 	color: $input-color;
 	&:hover {
-		border-color: darken($gray_light, 5%);
+		border-color: $primary_light;
 	}
 	&:active, &:focus {
 		border-color: $primary_light;
-		box-shadow: 0px 0px 19px 2px rgba(233,237,245,0.58);
-		border: solid 1px darken($divider-grey, 5);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+		border: solid 1px $primary_light;
 	}
 	// Arrow
 	&:after { 

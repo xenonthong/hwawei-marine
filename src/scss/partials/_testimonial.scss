@@ -16,7 +16,7 @@
 		left: 0;
 		font-size: 100px;
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			top: -20px;
 			font-size: 200px;
 		}
@@ -28,49 +28,66 @@
 		right: 0;
 		font-size: 150px;
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			bottom: -120px;
 		}
 	}
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		padding: 100px 0 80px;
 	}
 
 	@at-root {
 		#{&}__photo {
-			@media #{$md-bp} {
+			@media #{$sm-bp} {
 				@include make-xs-column-offset(1);
 				@include make-xs-column(2);
 			}
 
 			img {
-				width: 80px;
+				width: 100%;
+				max-width: 80px;
 				border: solid 3px $white;
 				border-radius: 50%;
 
-				@media #{$md-bp} {
-					width: 170px;
+				@media #{$sm-bp} {
+					max-width: 170px;
 				}
 			}
 		}
 
 		#{&}__description,
 		#{&}__by {
-			@media #{$md-bp} {
+			@media #{$sm-bp} {
 				@include make-xs-column(8);
 			}
 		}
 
 		#{&}__description {
-			padding-top: 25px;
 			font-size: 18px;
 			font-family: $font-pri;
+			padding-top: 25px;
+
+			@media #{$sm-bp} {
+				padding-top: 0;
+			}
+
+			@media #{$md-bp} {
+				padding-top: 25px;
+			}
 		}
 
 		#{&}__by {
 			font-family: $font-pri-bold;
 			padding-top: 25px;
+
+			@media #{$sm-bp} {
+				@include make-xs-column-offset(3);
+			}
+
+			@media #{$md-bp} {
+				@include make-xs-column-offset(0);
+			}
 
 			span {
 				display: block;

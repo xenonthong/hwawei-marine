@@ -1,6 +1,7 @@
 window.$ = window.jQuery = require('jquery')
 window.niceSelect = require('jquery-nice-select')
 window.debounce = require('debounce')
+var loadTouchEvents = require('jquery-touch-events')
 
 require('bootstrap-sass/assets/javascripts/bootstrap/dropdown')
 require('bootstrap-sass/assets/javascripts/bootstrap/transition')
@@ -12,8 +13,15 @@ require('./backToTop')
 require('./stickyMenu')
 require('./heroVideo')
 
+// Init niceSelect
 $('select').niceSelect()
 
+// Init bootstrap carousel
 $('.carousel').carousel({
 	interval: 5000
 })
+
+// Init touch events
+loadTouchEvents($)
+
+require('./swipeableCarousel')

@@ -5,7 +5,7 @@
 	background-position: bottom center;
 	background-repeat: no-repeat;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		padding-top: 140px;
 	}
 }
@@ -53,6 +53,10 @@
 }
 
 .hero__intro-title {
-	font-family: $font-pri-light;
+	font-family: $font-pri;
 	color: $white;
+
+	@media #{$sm-bp} {
+		font-family: $font-pri-light;
+	}
 }

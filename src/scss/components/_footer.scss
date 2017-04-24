@@ -7,7 +7,7 @@ footer {
 	nav {
 		margin: 35px 0 20px;
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			margin: 10px 0 20px;
 		}
 
@@ -39,7 +39,7 @@ footer {
 	@include make-xs-column(12);
 	margin: 20px 0 30px;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		@include make-sm-column(6);
 		float: right !important;
 		margin: 20px 0 0;
@@ -64,7 +64,7 @@ footer {
 .copyright {
 	@include make-xs-column(12);
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		@include make-sm-column(6);
 		float: right !important;
 		margin: 20px 0 0;

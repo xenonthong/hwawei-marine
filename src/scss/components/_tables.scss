@@ -240,7 +240,7 @@ table {
 
 	border-width: 0;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		border-width: 1px;
 	}
 
@@ -248,7 +248,7 @@ table {
 		&:nth-child(2) {
 			border-top: solid 1px $divider-grey; // Show border top for mobile because the first-child is hidden.
 
-			@media #{$md-bp} {
+			@media #{$sm-bp} {
 				border-top: 0;
 			}
 		}
@@ -257,7 +257,7 @@ table {
 	th {
 		display: none;
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			display: table-cell;
 		}
 	}
@@ -272,12 +272,12 @@ table {
 			display: block;
 			font-weight: 700;
 
-			@media #{$md-bp} {
+			@media #{$sm-bp} {
 				display: none;
 			}
 		}
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			display: table-cell;
 			border-right: solid 1px $divider-grey;
 		}
@@ -299,7 +299,7 @@ table {
 	td {
 		border: 0px;
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			border: solid 1px $divider-grey;
 		}
 	}

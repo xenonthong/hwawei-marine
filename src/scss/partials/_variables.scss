@@ -2,7 +2,8 @@
  | MEDIA QUERIES
  -----------------------------------------------------------------------*/
 // breakpoints
-$md-bp: "only screen and (min-width: $screen-sm)";
+$sm-bp: "only screen and (min-width: $screen-sm)";
+$md-bp: "only screen and (min-width: $screen-md)";
 
 
 /*-----------------------------------------------------------------------

@@ -144,7 +144,7 @@
 	right: 0;
 	left: 0;
 	z-index: $zindex-navbar-fixed;
-	transition: all $transition-default;
+	transition: all .5s ease-in-out;
 
 	// Undo the rounded corners
 	@media (min-width: $grid-float-breakpoint) {
@@ -252,7 +252,7 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 		line-height: $line-height-computed;
-		transition: all $transition-default;
+		transition: all .5s ease-in-out;
 	}
 
 	@media (max-width: $grid-float-breakpoint-max) {
@@ -427,7 +427,7 @@
 	.navbar-text {
 		color: $navbar-default-mobile-color;
 		
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			color: $navbar-default-color;
 		}
 	}
@@ -435,14 +435,14 @@
 	.navbar-nav {
 		background: $white;
 
-		@media #{$md-bp} {
+		@media #{$sm-bp} {
 			background: transparent;
 		}
 
 		> li > a {
 			color: $navbar-default-mobile-color;
 		
-			@media #{$md-bp} {
+			@media #{$sm-bp} {
 				color: $navbar-default-color;
 			}
 

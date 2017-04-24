@@ -12,7 +12,7 @@
 	border-radius: $border-radius-base;
 	text-transform: capitalize;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		display: block;
 	}
 

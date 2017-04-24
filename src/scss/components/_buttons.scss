@@ -19,7 +19,7 @@
 	display: none;
 	opacity: .9;
 
-	@media #{$md-bp} {
+	@media #{$sm-bp} {
 		bottom: 30px;
 		right: 30px;
 	}
