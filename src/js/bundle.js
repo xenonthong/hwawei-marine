@@ -16,11 +16,6 @@ require('./heroVideo')
 // Init niceSelect
 $('select').niceSelect()
 
-// Init bootstrap carousel
-$('.carousel').carousel({
-	interval: 5000
-})
-
 // Init touch events
 loadTouchEvents($)
 
