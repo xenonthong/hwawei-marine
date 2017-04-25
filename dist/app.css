@@ -6427,20 +6427,55 @@ tbody.collapse.in {
 }
 
 .navbar-toggle .icon-bar {
+  position: relative;
   display: block;
   width: 22px;
   height: 3px;
   border-radius: 1px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 2px;
 }
 
+.navbar-toggle .icon-bar:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -5px;
+}
+
+.navbar-toggle .icon-bar:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.navbar-toggle .icon-bar:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 @media (min-width: 992px) {
   .navbar-toggle {
     display: none;
   }
+}
+
+.navbar-toggle.collapsed .icon-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .icon-bar:first-child {
+  top: 0px;
+}
+
+.navbar-toggle.collapsed .icon-bar:nth-child(2) {
+  width: 100%;
+  opacity: 1;
 }
 
 .navbar-nav {
@@ -8979,6 +9014,16 @@ button.close {
   }
 }
 
+::-moz-selection {
+  background: #00a7ea;
+  color: #fff;
+}
+
+::selection {
+  background: #00a7ea;
+  color: #fff;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -9316,7 +9361,7 @@ video {
 .news__overlay {
   position: relative;
   border-radius: 4px;
-  background-clip: padding-box;
+  overflow: hidden;
 }
 
 .news__overlay:before {
@@ -9327,14 +9372,13 @@ video {
   bottom: 0;
   left: 0;
   border-radius: 4px;
-  background-clip: padding-box;
+  overflow: hidden;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7) 0%, transparent 70%);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 70%);
 }
 
 .news__img {
   width: 100%;
-  border-radius: 4px;
 }
 
 .news__title {
@@ -10002,6 +10046,7 @@ footer small {
   outline: none;
   padding-left: 18px;
   padding-right: 29px;
+  margin-bottom: 0;
   text-align: left;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

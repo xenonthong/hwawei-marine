@@ -142,6 +142,7 @@ $arrow_color: $gray !default;
 		outline: none;
 		padding-left: $dropdown_padding;
 		padding-right: $dropdown_padding + 11;
+		margin-bottom: 0;
 		text-align: left;
 		transition: all 0.2s;
 		&:hover, &.focus, &.selected.focus { 

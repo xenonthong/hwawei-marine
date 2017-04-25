@@ -24,4 +24,5 @@ $('.carousel').carousel({
 // Init touch events
 loadTouchEvents($)
 
+// Allow carousel to be swipeable
 require('./swipeableCarousel')
